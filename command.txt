@@ -1,0 +1,23 @@
+1.给新用户创建root密码：用当前登录用户打开终端，在终端输入命令 sudo passwd，输入当前用户的密码然后回车
+2.删除所有内容：先用G 转到文件尾，然后使用下面命令：1, .d
+3.显示网卡接口，实现上网：/sbin/dhclient 
+4.强制无条件删除非空文件夹：rm -rf dirname
+  删除空文件夹：rmdir -p dirname
+5.查看所有用户列表：cat /etc/passwd
+6.创建用户：useradd test1
+7.给创建的用户设置密码：passwd test1
+8.删除用户：userdel test1
+9.Centos命令：yum update
+10.SS重启：systemctl restart shadowsocks  
+11.查看ss: systemctl status shadowsocks -l
+12.查看最近用户登录,显示ip,时间，状态：last
+13.查看内核信息：uname -a 
+14.查看进程：ps -au
+15.杀死yum进程：kill -s 9 (制定了传递给进程的信号是９，即强制、尽快终止进程) yum
+16.改变文件名mv xxx xxx1
+17.cat | bash #执行这条命令后可以直接在其之后执行其他命令，除了这条命令不会留下其他目录的历史，Tab键功能不能用
+	echo > ~/.bash_history #清除当前用户所有记录到文件里的记录
+	history -c #清楚所有历史纪录，不能清除文件里的
+	history -d {n} #清除历史纪录中指定的某条记录，{n}为数字
+	history -d {n} && history -d {x} && history -d {y} #清除指定的多条记录，包括可以清除自身这条
+	for i in {99..233}; do history -d $i; done #使用for循环清除指定连续的多条命令
