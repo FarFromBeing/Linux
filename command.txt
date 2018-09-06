@@ -21,3 +21,4 @@
 	history -d {n} #清除历史纪录中指定的某条记录，{n}为数字
 	history -d {n} && history -d {x} && history -d {y} #清除指定的多条记录，包括可以清除自身这条
 	for i in {99..233}; do history -d $i; done #使用for循环清除指定连续的多条命令
+18.查看当前活跃的用户：w
