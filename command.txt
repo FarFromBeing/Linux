@@ -10,6 +10,9 @@
 9.Centos命令：yum update
 10.SS重启：systemctl restart shadowsocks  
 11.查看ss: systemctl status shadowsocks -l
+	   ssserver -c /etc/shadowsocks.json -d start
+	   ssserver -c /etc/shadowsocks.json -d stop
+	   ssserver -c /etc/shadowsocks.json -d restart
 12.查看最近用户登录,显示ip,时间，状态：last
 13.查看内核信息：uname -a 
 14.查看进程：ps -au
