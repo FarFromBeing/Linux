@@ -26,3 +26,4 @@
 	for i in {99..233}; do history -d $i; done #使用for循环清除指定连续的多条命令
 18.查看当前活跃的用户：w
 19.循环实时查看log:tail -f /var/log/shadowsocks.log
+20. Bash下循环执行某个命令:mycount=0; while (( $mycount < 30 )); do `需要执行的命令` >>name.txt(保存名字到文件);((mycount=$mycount+1)); done;
