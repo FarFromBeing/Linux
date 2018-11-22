@@ -9,6 +9,7 @@
 8.删除用户：userdel test1
 9.Centos命令：yum update
 10.SS重启：systemctl restart shadowsocks  
+查看进程号:netstat -anp | grep 1080
 11.查看ss: systemctl status shadowsocks -l
 	   ssserver -c /etc/shadowsocks.json -d start
 	   ssserver -c /etc/shadowsocks.json -d stop
