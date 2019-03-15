@@ -28,22 +28,10 @@
 18.查看当前活跃的用户：w
 19.循环实时查看log:tail -f /var/log/shadowsocks.log
 20. Bash下循环执行某个命令:mycount=0; while (( $mycount < 30 )); do `需要执行的命令` >>name.txt(保存名字到文件);((mycount=$mycount+1)); done;
-21.scp:(1) 复制文件：  
-
-命令格式：  
-
+21.scp: 
 scp local_file remote_username@remote_ip:remote_folder  
-
-或者  
-
 scp local_file remote_username@remote_ip:remote_file  
-
-或者  
-
 scp local_file remote_ip:remote_folder  
-
-或者  
-
 scp local_file remote_ip:remote_file  
 
 第1,2个指定了用户名，命令执行后需要输入用户密码，第1个仅指定了远程的目录，文件名字不变，第2个指定了文件名  
@@ -52,3 +40,10 @@ scp local_file remote_ip:remote_file
 
 22.解压tar -xvf kibana-6.5.1-linux-x86_64.tar
 23.解压tar.gz:tar -zxvf ×××.tar.gz
+24.ls -lt|head -10（只显示前10条）
+25.升序：ls -lrt
+26.wc -l auth.txt: 统计auth.txt行数
+27.ls | head -10|xargs -i cp -r {} /home/others: 拷贝前10个文件夹到其他目录
+28.watch "ls| wc -l":每2s显示文件个数
+29.lsof -i:22查看22端口情况
+30.du -sh 查看磁盘使用情况
